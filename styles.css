@@ -22,6 +22,10 @@ header.header{
     view-transition-name: header;
 }
 
+footer{
+    view-transition-name: footer;
+}
+
 header svg {
     fill: #fff;
     width: 1.5em;
