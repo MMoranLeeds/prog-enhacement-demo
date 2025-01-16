@@ -13,34 +13,44 @@
 
 @keyframes slide-fade-in {
     from {
-      opacity: 0.75;
-      transform: scale(.75);
+        opacity: 0.75;
+        transform: scale(0.75);
     }
-  }
-  
-  .plp .product-item img {
+}
+
+header.header{
+    view-transition-name: header;
+}
+
+header svg {
+    fill: #fff;
+    width: 1.5em;
+    height: 1.5em;
+}
+
+.plp .product-item img {
     @media (prefers-reduced-motion: no-preference) {
-      @supports (animation-timeline: view()) {
-        animation: slide-fade-in both;
-        animation-timeline: view();
-        animation-range: contain 0% contain 75%;
-      }
+        @supports (animation-timeline: view()) {
+            animation: slide-fade-in both;
+            animation-timeline: view();
+            animation-range: contain 0% contain 75%;
+        }
     }
-  }
+}
 
-  .plp .search-page-wrapper{
+.plp .search-page-wrapper {
     align-items: flex-start;
-  }
+}
 
-  .plp .sidebar{
+.plp .sidebar {
     position: sticky;
     top: 20px;
-  }
+}
 
-  body .Product__Description-text{
+body .Product__Description-text {
     white-space: initial;
-  }
+}
 
-  .Product__Title{
+.Product__Title {
     text-wrap: balance;
-  }
+}
