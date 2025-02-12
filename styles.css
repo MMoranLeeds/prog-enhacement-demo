@@ -58,3 +58,16 @@ body .Product__Description-text {
 .Product__Title {
     text-wrap: balance;
 }
+
+.customisation-container textarea{
+    width: 100%;
+    min-height: 75px;
+    max-height: 200px;
+    border: 1px solid #ddd;
+    border-radius: .1em;
+    padding: 8px;
+}
+
+.customisation-container textarea.field-sizing{
+    field-sizing: content;
+}
