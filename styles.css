@@ -54,9 +54,10 @@
             }
     
             .description {
-                color: #666; /* Lighter text color */
+                color: #666;
                 line-height: 1.5;
                 flex: 1;
+                text-wrap: balance;
             }
     
             &:hover,
