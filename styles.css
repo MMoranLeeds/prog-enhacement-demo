@@ -38,18 +38,23 @@
             width: 300px;
             display: flex;
             flex-direction: column;
-    
+
+            
             .content {
                 padding: 20px;
+                gap: 16px;
                 display: flex;
                 flex-direction: column;
                 flex: 1;
+
+                *{
+                 margin: 0;   
+                }
             }
     
             .title {
                 font-size: 1.2rem;
                 font-weight: bold;
-                margin-bottom: 10px;
                 color: #333;
             }
     
@@ -63,14 +68,25 @@
             &:hover,
             &:focus-within {
                 transform: translateY(-5px);
+
+                .image-container{
+                    img{
+                        scale: 1.05;
+                    }
+                }
             }
     
-            img {
-                width: 100%;
+            .image-container{
+                overflow: hidden;
                 height: 125px;
-                object-fit: cover;
-                object-position: top center;
-                display: block;
+                border-bottom: 1px solid #ddd;
+                img {
+                    aspect-ratio: 1;
+                    object-fit: cover;
+                    object-position: top center;
+                    display: block;
+                    transition: scale .3s;
+                }
             }
     
             a {
