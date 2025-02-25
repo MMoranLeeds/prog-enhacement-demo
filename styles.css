@@ -187,3 +187,8 @@ body .Product__Description-text {
 .customisation-container textarea.field-sizing {
     field-sizing: content;
 }
+
+.we-accept,
+.we-accept + .payment-and-trust{
+    display: none;
+}
